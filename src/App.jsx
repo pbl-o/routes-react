@@ -26,7 +26,15 @@ Login.jsx
 Para el Login, el email "almacenado" es: 'email' y la contraseña: 'thepassword'
 
 
-Pizza.jsx, de momento esta ruta es accesible en la medida que se ingrese la ruta (/pizza/001) en el browser.
+Pizza.jsx
+Adicionalmente al endpoint /pizza/001, se puede acceder a ella haciendo click en cualquier botón de "ver más" en el Home.
+ *Para salir de Pizza basta con volver al Home (Brand Pizza Ticcino, Home) o clickar sobre cualquier otro elemento del menú.
+ 
+Profile
+Adicionalmente al endpoint /profile, se puede acceder a este mediante un ingreso de credenciales exitoso del Login.
+ *Para salir de Profile basta clickar en "cerrar sesión, o accediendo al Home (Brand Pizza Ticcino, Home) o clickar sobre cualquier otro elemento del menú.
+
+   
  */
 
 function App() {

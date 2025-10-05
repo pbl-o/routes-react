@@ -3,12 +3,15 @@ import ListGroup from "react-bootstrap/ListGroup";
 import MyButton from "./Button.jsx";
 import conversor from "../utils/conversor.js";
 import Accordion from "react-bootstrap/Accordion";
+import { useNavigate } from "react-router-dom";
 
 //decidí colocar la descripción dentro de un acordeón temporalmente para mantener una dimensión recatada.
 //Queda redundante en la medida que comparte espacio con el botón saber más, pero eso se resolverá en la medida que la página adquiera más funcionalidades.
 
+//De momento todas los botones "ver más" llevan a la ruta /pizza/001, esto será resuelto en una versión avanzada en la cual la card será renderizada de forma dinámica y en consonancia con los elementos del backend.
+
 const CardPizza = ({ name, img, price, ingredients, description }) => {
-   
+   let navigateToPizza = useNavigate()
   return (
     <>
       <div className="col">
@@ -41,7 +44,7 @@ const CardPizza = ({ name, img, price, ingredients, description }) => {
               <Card.Body>
                 <div className=" d-flex justify-content-around">
                   <MyButton btnText="Ver Más" btnColor="light"/>
-                  <MyButton btnText="Añadir" btnColor="dark" />
+                  <MyButton btnText="Añadir" btnColor="dark" clickAction={()=>navigateToPizza("/pizza/001")} />
                 </div>
               </Card.Body>
             </ListGroup.Item>
