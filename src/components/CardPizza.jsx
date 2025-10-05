@@ -8,6 +8,7 @@ import Accordion from "react-bootstrap/Accordion";
 //Queda redundante en la medida que comparte espacio con el botón saber más, pero eso se resolverá en la medida que la página adquiera más funcionalidades.
 
 const CardPizza = ({ name, img, price, ingredients, description }) => {
+   
   return (
     <>
       <div className="col">
@@ -39,7 +40,7 @@ const CardPizza = ({ name, img, price, ingredients, description }) => {
               <Card.Text className="fw-bolder">{conversor(price)}</Card.Text>
               <Card.Body>
                 <div className=" d-flex justify-content-around">
-                  <MyButton btnText="Ver Más" btnColor="light" />
+                  <MyButton btnText="Ver Más" btnColor="light"/>
                   <MyButton btnText="Añadir" btnColor="dark" />
                 </div>
               </Card.Body>

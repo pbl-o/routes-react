@@ -25,6 +25,8 @@ ver la información obtenida de un servidor local sobre una pizza en específico
 Login.jsx
 Para el Login, el email "almacenado" es: 'email' y la contraseña: 'thepassword'
 
+
+Pizza.jsx, de momento esta ruta es accesible en la medida que se ingrese la ruta (/pizza/001) en el browser.
  */
 
 function App() {

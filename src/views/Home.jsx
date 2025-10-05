@@ -5,7 +5,6 @@ import apiFetcher from "../utils/apiFetcher.js";
 
 const Home = () => {
   const [apiAllPizzasInfo, setApiAllPizzasInfo] = useState([]);
-
   useEffect(() => {
     apiFetcher(
       "http://localhost:5000/api/pizzas",
