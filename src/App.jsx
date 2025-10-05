@@ -1,35 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import MyNavbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
+import Register from "./views/Register.jsx";
+import Cart from "./views/Cart.jsx";
+import Login from "./views/Login.jsx";
+import Home from "./views/Home.jsx";
+import NotFound from "./views/NotFound.jsx";
+import Pizza from "./views/Pizza.jsx";
+import Profile from "./components/Profile.jsx";
+import {Routes, Route} from 'react-router-dom'
+import { useState } from "react";
+
+
+/* 
+
+Como no está indicado en las instrucciones el conectar los botones con las secciones de la app, coloqué temporariamente un "selector" para facilitar el observar los contenidos requeridos de forma aislada.
+  
+//Soluciones provisorias: 
+
+App.jsx  
+Cambiar el contenido de visible a 'home' para visualizar al componente home, 'register' para visualizar al componente register, 'login' para el componente login y 'pizza' para 
+ver la información obtenida de un servidor local sobre una pizza en específico.
+
+Login.jsx
+Para el Login, el email "almacenado" es: 'email' y la contraseña: 'thepassword'
+
+ */
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [token, setToken] = useState(false)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <MyNavbar />
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/login" element={<Login/>}></Route>
+          <Route path="/register" element={<Register/>}></Route>
+          <Route path="/cart" element={<Cart/>}></Route>
+          <Route path="/pizza/001" element={<Pizza/>}></Route>
+          <Route path="/profile" element={<Profile/>}></Route>
+          <Route path="*" element={<NotFound/>}></Route>
+        </Routes>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
