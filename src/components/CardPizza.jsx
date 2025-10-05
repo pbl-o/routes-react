@@ -43,8 +43,8 @@ const CardPizza = ({ name, img, price, ingredients, description }) => {
               <Card.Text className="fw-bolder">{conversor(price)}</Card.Text>
               <Card.Body>
                 <div className=" d-flex justify-content-around">
-                  <MyButton btnText="Ver Más" btnColor="light"/>
-                  <MyButton btnText="Añadir" btnColor="dark" clickAction={()=>navigateToPizza("/pizza/001")} />
+                  <MyButton btnText="Ver Más" btnColor="light" clickAction={()=>navigateToPizza("/pizza/001")}/>
+                  <MyButton btnText="Añadir" btnColor="dark"  />
                 </div>
               </Card.Body>
             </ListGroup.Item>
