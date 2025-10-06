@@ -9,36 +9,28 @@ import NotFound from "./views/NotFound.jsx";
 import Pizza from "./views/Pizza.jsx";
 import Profile from "./components/Profile.jsx";
 import {Routes, Route} from 'react-router-dom'
-import { useState } from "react";
 
 
 /* 
-
-Como no está indicado en las instrucciones el conectar los botones con las secciones de la app, coloqué temporariamente un "selector" para facilitar el observar los contenidos requeridos de forma aislada.
   
-//Soluciones provisorias: 
-
-App.jsx  
-Cambiar el contenido de visible a 'home' para visualizar al componente home, 'register' para visualizar al componente register, 'login' para el componente login y 'pizza' para 
-ver la información obtenida de un servidor local sobre una pizza en específico.
+Soluciones provisorias: 
 
 Login.jsx
 Para el Login, el email "almacenado" es: 'email' y la contraseña: 'thepassword'
 
-
 Pizza.jsx
-Adicionalmente al endpoint /pizza/001, se puede acceder a ella haciendo click en cualquier botón de "ver más" en el Home.
- *Para salir de Pizza basta con volver al Home (Brand Pizza Ticcino, Home) o clickar sobre cualquier otro elemento del menú.
+Adicionalmente al ingreso del endpoint /pizza/001 en la barra de navegación del browser, se puede acceder a ella haciendo click en cualquier botón de "ver más" en las tarjetas de cada pizza en Home.
+ *Para salir de Pizza basta con volver al Home (Brand Pizza Ticcino, Home) o hacer click sobre cualquier otro elemento del menú.
  
 Profile
-Adicionalmente al endpoint /profile, se puede acceder a este mediante un ingreso de credenciales exitoso del Login.
- *Para salir de Profile basta clickar en "cerrar sesión, o accediendo al Home (Brand Pizza Ticcino, Home) o clickar sobre cualquier otro elemento del menú.
+Adicionalmente al ingreso del endpoint /profile en la barra de navegación del browser, se puede acceder a este mediante un ingreso de credenciales exitoso del Login.
+ *Para salir de Profile basta hacer click en "cerrar sesión, o accediendo al Home (Brand Pizza Ticcino, Home) o hacer clicksobre cualquier otro elemento del menú.
 
    
  */
 
 function App() {
-  const [token, setToken] = useState(false)
+
 
   return (
     <>

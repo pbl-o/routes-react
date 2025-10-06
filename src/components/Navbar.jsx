@@ -3,25 +3,16 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import conversor from "../utils/conversor.js";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-/*Observaciones
-
-Ya que estoy exportando un componente boostrap que ya se llama 
-preferí llamar diferenciar mi componente para evitar posibles confusiones
-
-Preferí mantener el link del Navbar de bootstrap en por sobre los botones para aprovechar el componente, dado que 
-El objetivo del punto 4 es que las opciones Home y Total (sea botón o no) se mantengan tal cual son independiente
-del token
-
-*/
 
 const MyNavbar = () => {
   const total = 25000;
-  const token = false;
+  const [token, setToken] = useState(false)
   return (
     <Navbar
       expand="lg"
-      className="bg-dark w-100 d-flex justify-content-between "
+      className="bg-dark w-100 d-flex justify-content-between"
       variant="dark"
     >
       <Container fluid>
@@ -31,8 +22,8 @@ const MyNavbar = () => {
           <Nav className="w-100">
             <div className="d-flex flex-column flex-lg-row">
               <Nav.Link as={Link} to="/">🍕Home</Nav.Link>
-              <Nav.Link as={Link} to="/login">{token ? "🔐Logout" : "🔐Login"}</Nav.Link>
-              <Nav.Link as={Link} to="/register">
+              <Nav.Link as={Link} to={token ? '/' :"/login"}>{token ? "🔐Logout" : "🔐Login"}</Nav.Link>
+              <Nav.Link as={Link} to={token ? '/profile' : '/register'}>
                 {token ? "🔐Profile" : "🔐Register"}
               </Nav.Link>
             </div>

@@ -1,16 +1,13 @@
-# React + Vite
+Pizzería (Quinta parte)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pablo Díaz
 
-Currently, two official plugins are available:
+La tercera etapa consiste en la implementación de React Router para construir una SPA cuyo enrutamiento responderá a vistas (index, register, login, cart, etc...)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta aplicación renderiza gran parte de su contenido en función de un servidor node.js (de manera local por el momento).
 
-## React Compiler
+Para ejecutar la aplicación de manera correcta, descargar el servidor y ejecutarlo en la terminal (npm start).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-Esta página no está 100% funcional, por loque instrucciones relativas a particularidades de esta etapa del proyecto, se encuentran comentadas en el fichero App.jsx
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tecnologías utilizadas: React + Vite
