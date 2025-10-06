@@ -2,15 +2,16 @@ Pizzería (Quinta parte)
 
 Pablo Díaz
 
-La tercera etapa consiste en la implementación de React Router para construir una SPA cuyo enrutamiento responderá a vistas (index, register, login, cart, etc...)
+La quinta etapa consiste en la implementación de React Router para construir una SPA cuyo enrutamiento responderá a vistas (index, register, login, cart, etc...)
 
--La página está en proceso y de momento es accesible solo de manera local. Por ello de manera temporal se han dispuesto instrucciones específicas para esta fase del proyecto, tanto aquí, como en forma de comentarios en el fichero App.jsx
+*La página está en proceso y de momento es accesible solo de manera local. Por ello de manera temporal se han dispuesto instrucciones específicas para esta fase del proyecto, tanto aquí, como en forma de comentarios en el fichero App.jsx
 
 Para ejecutar de manera local: 
 1 - Descargar
 2 - Instalar dependencias (npm i)
+3 - Ejecutar (npm run dev) 
 
-*Esta página funciona en conjunto con una api (node.js  express.js) de no usarla, algunas informaciones no podrán ser renderizadas. 
+*Esta aplicación funciona en conjunto con una api (node.js  express.js) para su correcto renderizado   
 
 Instrucciones específicas:
 
