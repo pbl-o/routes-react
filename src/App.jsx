@@ -8,8 +8,7 @@ import Home from "./views/Home.jsx";
 import NotFound from "./views/NotFound.jsx";
 import Pizza from "./views/Pizza.jsx";
 import Profile from "./components/Profile.jsx";
-import {Routes, Route} from 'react-router-dom'
-
+import { Routes, Route } from "react-router-dom";
 
 /* 
   
@@ -30,20 +29,18 @@ Adicionalmente al ingreso del endpoint /profile en la barra de navegación del b
  */
 
 function App() {
-
-
   return (
     <>
       <MyNavbar />
-        <Routes>
-          <Route path="/" element={<Home/>}></Route>
-          <Route path="/login" element={<Login/>}></Route>
-          <Route path="/register" element={<Register/>}></Route>
-          <Route path="/cart" element={<Cart/>}></Route>
-          <Route path="/pizza/001" element={<Pizza/>}></Route>
-          <Route path="/profile" element={<Profile/>}></Route>
-          <Route path="*" element={<NotFound/>}></Route>
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/register" element={<Register />}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/pizza/001" element={<Pizza />}></Route>
+        <Route path="/profile" element={<Profile />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
+      </Routes>
       <Footer />
     </>
   );

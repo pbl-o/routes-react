@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   //estados:
@@ -12,7 +12,7 @@ const Login = () => {
   const storedMail = "email";
   const storedPass = "thepassword";
 
-  let navigateToProfile = useNavigate('/profile')
+  let navigateToProfile = useNavigate("/profile");
 
   const handleValidation = (e) => {
     e.preventDefault();
@@ -34,7 +34,7 @@ const Login = () => {
     alert("Login Succesful");
     setEmail("");
     setPassword("");
-    navigateToProfile('/profile')
+    navigateToProfile("/profile");
   };
 
   return (
