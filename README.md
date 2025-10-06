@@ -7,15 +7,14 @@ La quinta etapa consiste en la implementación de React Router para construir un
 *La página está en proceso y de momento es accesible solo de manera local. Por ello de manera temporal se han dispuesto instrucciones específicas para esta fase del proyecto, tanto aquí, como en forma de comentarios en el fichero App.jsx
 
 Para ejecutar de manera local: 
-1 - Descargar
-2 - Instalar dependencias (npm i)
-3 - Ejecutar (npm run dev) 
+#### 1 - Descargar
+#### 2 - Instalar dependencias (npm i)
+#### 3 - Ejecutar (npm run dev) 
 
 *Esta aplicación funciona en conjunto con una api (node.js  express.js) para su correcto renderizado   
 
 Instrucciones específicas:
-
-Soluciones provisorias: 
+(Soluciones provisorias) 
 
 Login.jsx
 Para el Login, las credenciales de acceso (email y contraseña) están comentados en el componente.
