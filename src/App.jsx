@@ -1,12 +1,12 @@
 import "./App.css";
 import MyNavbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
-import Register from "./views/Register.jsx";
-import Cart from "./views/Cart.jsx";
-import Login from "./views/Login.jsx";
-import Home from "./views/Home.jsx";
-import NotFound from "./views/NotFound.jsx";
-import Pizza from "./views/Pizza.jsx";
+import Register from "./pages/Register.jsx";
+import Cart from "./pages/Cart.jsx";
+import Login from "./pages/Login.jsx";
+import Home from "./pages/Home.jsx";
+import NotFound from "./pages/NotFound.jsx";
+import Pizza from "./pages/Pizza.jsx";
 import Profile from "./components/Profile.jsx";
 import { Routes, Route } from "react-router-dom";
 
@@ -22,8 +22,8 @@ Adicionalmente al ingreso del endpoint /pizza/001 en la barra de navegación del
  *Para salir de Pizza basta con volver al Home (Brand Pizza Ticcino, Home) o hacer click sobre cualquier otro elemento del menú.
  
 Profile
-Adicionalmente al ingreso del endpoint /profile en la barra de navegación del browser, se puede acceder a este mediante un ingreso de credenciales exitoso del Login.
- *Para salir de Profile basta hacer click en "cerrar sesión, o accediendo al Home (Brand Pizza Ticcino, Home) o hacer clicksobre cualquier otro elemento del menú.
+Adicionalmente al ingreso del endpoint /profile en la barra de navegación del browser, se puede acceder desde el menú cambiando el estado "token" en el componente Navabar.jsx a true, o bien, mediante un ingreso de credenciales exitoso del Login.
+ *Para salir de Profile basta hacer click en "cerrar sesión, o accediendo al Home (Brand Pizza Ticcino, Home) o hacer click sobre cualquier otro elemento del Navbar.
 
    
  */
